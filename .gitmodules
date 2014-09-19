@@ -1,0 +1,3 @@
+[submodule "test/jstinytest"]
+	path = test/jstinytest
+	url = https://github.com/joewalnes/jstinytest.git
