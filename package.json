@@ -1,0 +1,26 @@
+{
+  "name": "lisp.js",
+  "version": "0.0.0",
+  "description": "Lisp is cool. JavaScript is cool. Lisp.js is cool.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxdeviant/lisp.js.git"
+  },
+  "author": "Marshall Bowers <elliott.codes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxdeviant/lisp.js/issues"
+  },
+  "homepage": "https://github.com/maxdeviant/lisp.js"
+}
