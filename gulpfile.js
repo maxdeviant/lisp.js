@@ -6,19 +6,24 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
+var paths = {
+    js: 'src/*.js',
+    dist: 'dist'
+};
+
 gulp.task('lint', function () {
-    return gulp.src('src/*.js')
+    return gulp.src(paths.js)
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
 gulp.task('scripts', function () {
-    gulp.src('src/*.js')
+    gulp.src(paths.js)
         .pipe(concat('lisp.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest(paths.dist))
         .pipe(rename('lisp.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('watch', function () {
